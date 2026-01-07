@@ -8,7 +8,7 @@
 
 ## 训练
 - 运行：`python train.py --model_name bert-base-chinese --epochs 3 --batch_size 8`
-- 训练数据路径：`data/train.json`
+- 训练数据路径：本地训练集地址
 
 ## 评估
 - 运行：`python evaluate.py --model_dir models/out --file data/test.json`
@@ -20,7 +20,6 @@
 - JSON 数组，元素包含 `text` 与 `label` 字段。
 
 ## 目录结构
-- `data/` 训练与测试数据
 - `models/` 模型与分类器模块
 - `attack/` 词重要性估计与同义替换攻击
 - `train.py` 训练脚本
